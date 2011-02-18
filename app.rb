@@ -23,19 +23,19 @@ require 'sass'
 #DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/mahdata.db")
 
 #for heroku use this
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://mahdata.db')
-
-
-
-class Issue
-  include DataMapper::Resource
-  property  :issue_title, Text
-  property  :pub_date, Text
-  property  :issue_number, Integer, :key => true
-end
-
-
-DataMapper.auto_upgrade!
+# DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://mahdata.db')
+# 
+# 
+# 
+# class Issue
+#   include DataMapper::Resource
+#   property  :issue_title, Text
+#   property  :pub_date, Text
+#   property  :issue_number, Integer, :key => true
+# end
+# 
+# 
+# DataMapper.auto_upgrade!
 
 ###################################
 # NETWORK #########################
