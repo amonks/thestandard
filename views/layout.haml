@@ -7,12 +7,29 @@
 		%link{:rel=>'icon', :href=>"/favicon.png", :type => "image/png"}
 	%body
 		#header
+			#the
+				the
 			#title
-				The Gentleman's Standard
+				Gentleman's Standard
 			#subtitle
 				de l'Acad&eacute;mie
+		#navbar
+			.button
+				%a{:href=>'/'}
+					Home
+			.button
+				%a{:href=>'/one'}
+					Vol. 1
+			.button
+				%a{:href=>'/two'}
+					Vol. 2
+			.button
+				%a{:href=>'/three'}
+					Vol. 3
 		#content
 			= yield
 		#footer
 			#copyright
 				Copyright &copy; 2010, to The Gentleman's Standard
+				&emsp;&bull;&emsp;
+				All Rights Reserved

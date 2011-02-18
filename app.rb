@@ -72,3 +72,19 @@ end
 get '/' do
   haml :index
 end
+
+###################################
+# Issues ##########################
+###################################
+
+get '/one' do
+  haml :one
+end
+
+get '/two' do
+  haml :two
+end
+
+get '/three' do
+  haml :three
+end
