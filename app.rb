@@ -20,10 +20,10 @@ require 'sass'
 ###################################
 
 #locally use this
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/mahdata.db")
+#DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/mahdata.db")
 
 #for heroku use this
-#DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://mahdata.db')
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://mahdata.db')
 
 
 
