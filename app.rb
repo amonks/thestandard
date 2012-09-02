@@ -9,8 +9,6 @@
 
 require 'rubygems'
 require 'sinatra'
-# require 'dm-core'
-# require 'dm-aggregates'
 require 'haml'
 require 'sass'
 
@@ -42,7 +40,6 @@ require 'sass'
 ###################################
 
 set :haml, {:format => :html5 } # default Haml format is :xhtml
-set :port, 80
 
 ###################################
 # BLOCK IE ########################
